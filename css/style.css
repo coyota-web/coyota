@@ -1,186 +1,585 @@
-/* ______________________________________________________________________________________________________________________ */
-/* Smooth Scrolling */
-
-
-
-/* Extra Fonts */
-
-/* Poppins for Navigation Bar + some other*/
-
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');  */
-
-
-/* ___________________________________________________________ */
-
-
-/* Deleting Default Margin & Padding */
+/* Root Reset */
 *{
-    margin: 0;
-    padding: 0;
-    font-family: PP Neue Montreal;
+  margin: 0;
+  padding: 0;
+  font-family: PP Neue Montreal;
+  font-weight: 450;
+  scroll-behavior: smooth;
 }
-/* ___________________________________________________________ */
-
+/* _________________________________________________ */
 /* Variables */
-    
-/* :root {
-    --blue: #1e90ff;
-    --white: #ffffff;
+:root {
+    /* Font  */
+  --font: PP Neue Montreal;
+
+    /* Color  */
+  --primarybgclr: #08090A; /* First Body */
+    /* Gradient Body = #141516 to # 08090A */
+
+    /* Font Color  */
+  --h1color: #F5F5F5; /* Header */
+  --h2color: #B5B6B6; /* Below Header */
+  --paramaincolor: #F7F8F8; /* Light Paragraph */
+  --paraseccolor: #8A8F98; /* Light Paragraph */
+
+    /* Button Color */
+  --btnmaintxtcolor: #08090A; /* Button text color */
+  --btnsechvr: #2C2C30; /* Button text color */
+  --btnmainb4hvr: #E6E6E6; /* Button before hover */
+  --btnmainaftrhvr: #FFFFFF; /* Button after hover */
+}
+/* _________________________________________________ */
+  
+  /* Body */
+  body{
+    background-color: var(--primarybgclr);
+    height: 200vh;
+  }
+
+/* _________________________________________________ */
+
+/* Navbar */
+.navigationbar{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navbar */
+.navbar{
+  width: 80%;
+  height: 50px;
+  border-radius: 15px;
+  background:  var(--btnmaintxtcolor);
+  box-shadow: 0 8px 2000px 0 rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur( 200px );
+  -webkit-backdrop-filter: blur( 20px );
+  border: 1.99px solid #272727;
+  position: fixed;
+  top: 0;
+  margin-top: 25px;
+  padding-left: 3px;
+  padding-right: 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navibar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 75%;
+  width: 97%;
+  /* background-color: red; */
+}
+/* 87.3 for width in other  */
+
+/* Division of Nav section */
+/* Logo */
+.logo{
+  /* width: 9%; */
+  /* height: 50%; */
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* background-color: red; */
+}
+
+.logo img{
+  height: 20px;
+}
+/* Nav Link */
+.navlinks{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  height: 55%;
+  color: var(--h2color);
+  letter-spacing: 0.2px;
+  font-size: 0.95rem;
+  /* background-color: #41a5a5; */
+}
+.navilinks{
+  width: 100%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  /* background-color: #fff; */
+}
+li{
+  transition: all 0.2s ease-out;
+}
+li:hover{
+  color: var(--h1color);
+  cursor: pointer;
+}
+/* Button */
+.contactbtn{
+  width: auto;
+  /* background-color: #ff4c05; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center ;
+  justify-content: flex-end;
+  text-align: center;
+  height: auto;
+}
+.contact{
+  width: 90px;
+  float: right;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--btnmainb4hvr);
+  color: var(--btnmaintxtcolor);
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  font-size: 0.95rem;
+  border-radius: 0.48rem;
+  height: 28px;
+}
+.contact button{
+  cursor: pointer;
+  font-weight: 450;
+}
+.contact:hover{
+  background-color: var(--btnmainaftrhvr);
+}
+
+/* _________________________________________________ */
+                /* Hero Section  */
+
+.herofull{
+  width: 100%;
+  height: 110vh;
+  /* background-color: #9e6a6a; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url(../images/White-Glow.png);
+  overflow: visible;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 700px 500px;
+  position: relative; */
+
+}      
+.hero{
+  width: 80%;
+  height: 80%;
+  /* background-color: #5cbeba; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}      
+.heroL{
+  width: 65%;
+  height: 100%;
+  /* background-color: #665cbe; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* padding-top: 15vh; */
+}      
+.heroLhead{
+  /* background-color: #5cbea5; */
+  display: flex;
+  text-align: left;
+  padding-bottom: 1.5rem;
+  
+}      
+.heroLhead h1{
+  font-size: 2.75rem;
+  font-weight: 600;
+  line-height: 50px;
+  color: var(--h1color);
+  
+
+}      
+.heroLpara{
+  /* background-color: #83be5c; */
+  color: var(--h2color);
+  display: flex;
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+.heroLpara p{
+  font-size: 1.25rem;
+  font-weight: 530;
+  line-height: auto;
+}
+.heroLbutton{
+  height: 45px;
+  width: 70%;
+  background-color: var(--primarybgclr);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.heroLbuttonmain{
+  height: 80%;
+  width: auto;
+}
+.primarybutton{
+  height: 100%;
+  width: auto;
+  background: var(--btnmainb4hvr);
+  transition: all 0.2s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  border-radius: 0.48rem;
+}
+.primarybutton:hover{
+  background-color: var(--btnmainaftrhvr);
+}
+.primarybutton button{
+  font-weight: 530;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.heroLbuttonsecondary{
+  height: 80%;
+  width: auto;
+}
+.secondarybutton{
+  height: 100%;
+  width: auto;
+  color: var(--h2color);
+  background: transparent;
+  transition: all 0.2s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  border-radius: 0.48rem;
+  margin-left: 15px;
+}
+.secondarybutton:hover{
+  background-color: #28282ccc;
+}
+.secondarybutton button{
+  font-weight: 530;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.heroR{
+  width: 35%;
+  height: 100%;
+  background-color: var(--primarybgclr);
+  display: flex;
+  float: right;
+  align-items: center;
+  justify-content: center;
+}      
+
+
+/* _________________________________________________ */
+        /* Atom */
+        #atom {
+          position: relative;
+          width: 300px;
+          height: 300px;
+          display: inline-block;
+          margin: 10px auto;
+        }
+        
+        #nucleus, .orbit, .electron, .orbitTrain, .electronTrain {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          margin: auto;
+        }
+        
+        #nucleus {
+          background: #ACACAC;
+          box-shadow: 0 0 15px #ACACAC;
+          -webkit-animation: shining 2s infinite linear;
+          -moz-animation: shining 2s infinite linear;
+          -ms-animation: shining 2s infinite linear;
+          -o-animation: shining 2s infinite linear;
+          animation: shining 2s infinite linear;
+        }
+        
+        .orbit:before {
+          content: " ";
+          position: absolute;
+          z-index: -1;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          border: 0.5px solid rgba(255, 255, 255, 0.1);
+          border-radius: 50%;
+        }
+        
+        .orbit {
+          width: 200px;
+          height: 200px;
+          border: 0;
+          transform-style: preserve-3d;
+          -webkit-animation: orbitSpecial 1.5s infinite linear;
+          -moz-animation: orbitSpecial 1.5s infinite linear;
+          -ms-animation: orbitSpecial 1.5s infinite linear;
+          -o-animation: orbitSpecial 1.5s infinite linear;
+          animation: orbitSpecial 1.5s infinite linear;
+        }
+        .orbit .electron {
+          position: relative;
+          top: 95px;
+          width: 10px;
+          height: 10px;
+          background: #F7F8F8;
+          box-shadow: 0 0 15px #F7F8F8;
+          border-radius: 50%;
+          transform: translateX(100px);
+          -webkit-animation: electronAnimation 1.5s infinite linear;
+          -moz-animation: electronAnimation 1.5s infinite linear;
+          -ms-animation: electronAnimation 1.5s infinite linear;
+          -o-animation: electronAnimation 1.5s infinite linear;
+          animation: electronAnimation 2.5s infinite linear;
+        }
+        
+        .orbit:nth-child(4) {
+          transform: rotateY(65deg) rotateX(5deg);
+          animation-delay: -1s;
+        }
+        .orbit:nth-child(4) .electron {
+          animation-delay: -1s;
+        }
+        
+        .orbit:nth-child(2) {
+          transform: rotateY(65deg) rotateX(-54deg);
+          animation-delay: -1s;
+          animation-duration: 1s;
+        }
+        .orbit:nth-child(2) .electron {
+          animation-duration: 2.5s;
+        }
+        
+        .orbit:nth-child(3) {
+          transform: rotateY(65deg) rotateX(54deg);
+        }
+        
+        @-webkit-keyframes electronAnimation {
+          0% {
+            transform: rotateZ(0deg) translateX(100px) rotateZ(0deg) rotateY(-65deg);
+          }
+          100% {
+            transform: rotateZ(360deg) translateX(100px) rotateZ(-360deg) rotateY(-65deg);
+          }
+        }
+        @-moz-keyframes electronAnimation {
+          0% {
+            transform: rotateZ(0deg) translateX(100px) rotateZ(0deg) rotateY(-65deg);
+          }
+          100% {
+            transform: rotateZ(360deg) translateX(100px) rotateZ(-360deg) rotateY(-65deg);
+          }
+        }
+        @-ms-keyframes electronAnimation {
+          0% {
+            transform: rotateZ(0deg) translateX(100px) rotateZ(0deg) rotateY(-65deg);
+          }
+          100% {
+            transform: rotateZ(360deg) translateX(100px) rotateZ(-360deg) rotateY(-65deg);
+          }
+        }
+        @-o-keyframes electronAnimation {
+          0% {
+            transform: rotateZ(0deg) translateX(100px) rotateZ(0deg) rotateY(-65deg);
+          }
+          100% {
+            transform: rotateZ(360deg) translateX(100px) rotateZ(-360deg) rotateY(-65deg);
+          }
+        }
+        @keyframes electronAnimation {
+          0% {
+            transform: rotateZ(0deg) translateX(100px) rotateZ(0deg) rotateY(-65deg);
+          }
+          100% {
+            transform: rotateZ(360deg) translateX(100px) rotateZ(-360deg) rotateY(-65deg);
+          }
+        }
+        @-webkit-keyframes orbitSpecial {
+          0% {
+            border: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          35% {
+            border: 0;
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          70% {
+            border: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          100% {
+            border: 0;
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+          }
+        }
+        @-moz-keyframes orbitSpecial {
+          0% {
+            border: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          35% {
+            border: 0;
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          70% {
+            border: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          100% {
+            border: 0;
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+          }
+        }
+        @-ms-keyframes orbitSpecial {
+          0% {
+            border: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          35% {
+            border: 0;
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          70% {
+            border: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          100% {
+            border: 0;
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+          }
+        }
+        @-o-keyframes orbitSpecial {
+          0% {
+            border: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          35% {
+            border: 0;
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          70% {
+            border: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          100% {
+            border: 0;
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+          }
+        }
+        @keyframes orbitSpecial {
+          0% {
+            border: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          35% {
+            border: 0;
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          70% {
+            border: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+          }
+          100% {
+            border: 0;
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+          }
+        }
+        @-webkit-keyframes shining {
+          0% {
+            box-shadow: 0 0 0 transparent;
+          }
+          50% {
+            box-shadow: 0 0 40px #ACACAC;
+          }
+          100% {
+            box-shadow: 0 0 0 transparent;
+          }
+        }
+        @-moz-keyframes shining {
+          0% {
+            box-shadow: 0 0 0 transparent;
+          }
+          50% {
+            box-shadow: 0 0 40px #ACACAC;
+          }
+          100% {
+            box-shadow: 0 0 0 transparent;
+          }
+        }
+        @-ms-keyframes shining {
+          0% {
+            box-shadow: 0 0 0 transparent;
+          }
+          50% {
+            box-shadow: 0 0 40px #ACACAC;
+          }
+          100% {
+            box-shadow: 0 0 0 transparent;
+          }
+        }
+        @-o-keyframes shining {
+          0% {
+            box-shadow: 0 0 0 transparent;
+          }
+          50% {
+            box-shadow: 0 0 40px #ACACAC;
+          }
+          100% {
+            box-shadow: 0 0 0 transparent;
+          }
+        }
+        @keyframes shining {
+          0% {
+            box-shadow: 0 0 0 transparent;
+          }
+          50% {
+            box-shadow: 0 0 40px #ACACAC;
+          }
+          100% {
+            box-shadow: 0 0 0 transparent;
+          }
+        }
+/* _________________________________________________ */
+@media screen and (max-width: 896px) {
+  .navlinks{
+    display: none;
+  }
+  .heroR{
+    display: none;
   }
   
-  body { background-color: var(--blue); } */
-
-/* ___________________________________________________________ */
-
-/* HTML Body */
- body {
-    min-height: 100vh;
-    width: 100%;
-    /* background: aqua; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* ___________________________________________________________ */
-
-/* Hero Section */
-
-.herosection{
-    width: 100%;
-    height: 100vh;
-    /* background-color: red; */
-    background-image: url(../images/herobg.svg);
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* ___________________________________________________________ */
-
-
-/* 90Hero Section */
-
-.hero90{
-    width: 90%;
-    height: 100%;
-    /* background: blue; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* ___________________________________________________________ */
-
-
-/* Navbar Section */
-
-.navbar{
-    width: 92%;
-    height: 60px;
-    border-radius: 9999px;
-    opacity: 0.9;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    color: #000;
-    background-color: rgba(20, 20, 20,.3);
-    transform: translate(0);
-    box-shadow: 1px 1px 1rem rgb(26 26 26 / 15%);
-    border: #262626 1px solid;
-    position: fixed;
-    top: 0;
-    margin-top: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* ___________________________________________________________ */
-
-
-/* Left-Right Combined Section */
-
-.lefrig{
-    width: 100%;
-    height: 80%;
-    /* background: yellow; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-/* ___________________________________________________________ */
-
-/* Left Hero Section */
-
-.lefthero{
-    width: 40%;
-    height: 100%;
-    /* background: rgb(91, 134, 101); */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 70px;
-}
-.leftmidtext{
-    width: 85%;
-    height: auto;
-    
-    
-    /* margin-top: 40px; */
-    /* background-color: blueviolet; */
-}
-.leftmidtext h1{
-    font-family: PP Neue Montreal Bold;
-    font-size: 5rem;
-    background: #A7A79D;
-    background: linear-gradient(to top right, #A7A79D 0%, #F6F6EE 100%, #A7A79D 0%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: left;
-    line-height: 1.15;
-    padding-bottom: 0px;
-}
-.leftmidtext p{
-    font-family: PP Neue Montreal;
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: #B4B5B5;
-    text-align: left;
-    line-height: 1.27;
-    padding-bottom: 30px;
-    
-}
-.leftmidactbutton{
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.4px;
-    /* background-color: red; */
-}
-
-/* ___________________________________________________________ */
-
-
-/* Right Hero Section */
-
-.righthero{
-    width: 60%;
-    height: 100%;
-    /* background: rgb(107, 115, 176); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* ___________________________________________________________ */
-.body1{
-    height : 100vh;
 }

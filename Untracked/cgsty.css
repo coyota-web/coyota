@@ -1,0 +1,54 @@
+/* Reset margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0; /* Position at the very top */
+    left: 0;
+    width: 100%; /* Makes it span the full width */
+    background-color: #333; /* Background color of the navbar */
+    color: white; /* Text color */
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Add some spacing to ensure content doesn't hide behind the fixed navbar */
+section {
+    padding: 100px 20px;
+    margin-top: 60px; /* To prevent overlap with the fixed navbar */
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
