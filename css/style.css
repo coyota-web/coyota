@@ -582,6 +582,7 @@ p{
   height: 50vh;
   width: 100%;
   /* background-color: #51d3b3; */
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -596,9 +597,6 @@ p{
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-.body1 p{
-  /* background-color: #293311; */
 }
 .b1text{
   padding-bottom: 40px;
@@ -615,7 +613,168 @@ p{
   height: 130px;
   /* background-color: #222020; */
 }
-  
+
+/* _________________________________________________ */
+                     /* Method */
+
+.body2full{
+  height: 130vh;
+  width: 100%;
+  background: rgb(20,21,22);
+  background: -moz-linear-gradient(180deg, rgba(20,21,22,1) 0%, rgba(8,9,10,1) 50%);
+  background: -webkit-linear-gradient(180deg, rgba(20,21,22,1) 0%, rgba(8,9,10,1) 50%);
+  background: linear-gradient(180deg, rgba(20,21,22,1) 0%, rgba(8,9,10,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#141516",endColorstr="#08090a",GradientType=1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+.body2{
+  width: 80%;
+  height: 80vh;
+  /* background-color: #9f5cbe; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  /* background-color: #4fdfdf; */
+}
+.body2toptxt{
+  color: var(--h1color);
+  /* padding-bottom: 150px; */
+  /* background-color: #221e1e; */
+  height: 20%;
+  width: 100%;
+}
+.body2mid{
+  height: 200px;
+  width: 100%;
+  /* background-color: #191425; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+.body2mid1{
+  height: 100%;
+  width: 30%;
+  /* background-color: #af98e4; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.body2mid1 h2{
+  /* background-color: #a55c5c; */
+  height: auto;
+  padding-bottom: 15px;
+  width: 100%;
+}
+.body2mid1 p{
+  /* background-color: #27363a; */
+  color: var(--paramaincolor);
+  line-height: auto;
+  height: auto;
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+.body2mid2{
+  height: 100%;
+  width: 30%;
+  /* background-color: #af98e4; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.body2mid2 h2{
+  /* background-color: #a55c5c; */
+  height: auto;
+  padding-bottom: 15px;
+  width: 100%;
+}
+.body2mid2 p{
+  /* background-color: #26202e; */
+  color: var(--paramaincolor);
+  line-height: auto;
+  height: auto;
+  padding-bottom: 8px;
+  width: 100%;
+  letter-spacing: -0.188px;
+}
+
+.body2mid3{
+  height: 100%;
+  width: 30%;
+  /* background-color: #301470; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.body2mid3 h2{
+  /* background-color: #a55c5c; */
+  height: auto;
+  padding-bottom: 15px;
+  width: 100%;
+}
+.body2mid3 p{
+  /* background-color: #233033; */
+  color: var(--paramaincolor);
+  line-height: auto;
+  height: auto;
+  padding-bottom: 8px;
+  width: 100%;
+}
+h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--paramaincolor);
+  line-height: auto;
+}
+
+.vl{
+  border-left: 1px solid var(--paraseccolor);
+  height: 100%;
+}
+
+
+/* _________________________________________________ */
+                     /* Method */
+.body3full{
+  height: 130vh;
+  width: 100%;
+  background: rgb(20,21,22);
+  background: -moz-linear-gradient(180deg, rgba(20,21,22,1) 0%, rgba(8,9,10,1) 50%);
+  background: -webkit-linear-gradient(180deg, rgba(20,21,22,1) 0%, rgba(8,9,10,1) 50%);
+  background: linear-gradient(180deg, rgba(20,21,22,1) 0%, rgba(8,9,10,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#141516",endColorstr="#08090a",GradientType=1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.body3{
+  width: 80%;
+  height: 70%;
+  /* background-color: #9f5cbe; */
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+  text-align: left;
+  /* background-color: #4fdfdf; */
+}
+
 /* _________________________________________________ */
 @media screen and (max-width: 896px) {
   .navlinks{
