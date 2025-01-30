@@ -22,7 +22,7 @@
   --h1color: #F5F5F5; /* Header */
   --h2color: #B5B6B6; /* Below Header */
   --paramaincolor: #F7F8F8; /* Light Paragraph */
-  --paraseccolor: #8A8F98; /* Light Paragraph */
+  --paraseccolor: #8A8F98; /* Grey Paragraph */
 
     /* Button Color */
   --btnmaintxtcolor: #08090A; /* Button text color */
@@ -204,24 +204,22 @@ li:hover{
   display: flex;
   text-align: left;
   padding-bottom: 1.5rem;
+  color: var(--h1color);
   
 }      
-.heroLhead h1{
+h1{
   font-size: 2.75rem;
   font-weight: 600;
   line-height: 50px;
-  color: var(--h1color);
-  
-
 }      
 .heroLpara{
   /* background-color: #83be5c; */
   color: var(--h2color);
   display: flex;
   text-align: left;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.6rem;
 }
-.heroLpara p{
+p{
   font-size: 1.25rem;
   font-weight: 530;
   line-height: auto;
@@ -576,6 +574,48 @@ li:hover{
             box-shadow: 0 0 0 transparent;
           }
         }
+/* _________________________________________________ */
+                /* Choosen by leaders */
+
+.body1full{
+  margin-top: -50px;
+  height: 50vh;
+  width: 100%;
+  /* background-color: #51d3b3; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.body1{
+  width: 80%;
+  height: 80%;
+  /* background-color: #9f5cbe; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.body1 p{
+  /* background-color: #293311; */
+}
+.b1text{
+  padding-bottom: 40px;
+}
+.b1images{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.b1images img{
+  height: 130px;
+  /* background-color: #222020; */
+}
+  
 /* _________________________________________________ */
 @media screen and (max-width: 896px) {
   .navlinks{
