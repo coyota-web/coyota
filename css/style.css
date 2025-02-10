@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
   ::selection { background-color: #555fbb;
   color: var(--h1color);}
+  
 }
 /* _________________________________________________ */
 /* Variables */
@@ -32,10 +33,26 @@
 }
 /* _________________________________________________ */
   
-  /* Body */
+  /* Important Notes */
   body{
     background-color: var(--primarybgclr);
     height: auto;
+  }
+  img{
+    pointer-events: none;
+  }
+  h1{
+    font-family: 'PP Neue Montreal Bold';
+    font-size: 2.75rem;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 1px;
+  }  
+  p{
+    font-size: 1.25rem;
+    font-weight: 530;
+    line-height: auto;
+    
   }
 
 /* _________________________________________________ */
@@ -96,6 +113,9 @@
 
 .logo img{
   height: 20px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 /* Nav Link */
 .navlinks{
@@ -216,25 +236,12 @@ li:hover{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }     
-h1{
-  font-family: 'PP Neue Montreal Bold';
-  font-size: 2.75rem;
-  font-weight: 600;
-  line-height: 50px;
-  letter-spacing: 1px;
-}      
 .heroLpara{
   /* background-color: #83be5c; */
   color: var(--h2color);
   display: flex;
   text-align: left;
   padding-bottom: 1.6rem;
-}
-p{
-  font-size: 1.25rem;
-  font-weight: 530;
-  line-height: auto;
-  
 }
 .heroLbutton{
   height: 45px;
@@ -623,9 +630,11 @@ p{
 }
 .b1images img{
   height: 130px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
   /* background-color: #222020; */
 }
-
 /* _________________________________________________ */
             /* Service + Method + Customers */
 
@@ -647,7 +656,7 @@ p{
                      /* Body 2.1 */
 .body21{
   width: 80%;
-  height: 32rem;
+  height: 64rem;
   /* margin-top: 20vh; */
   padding-top: 140px;
   /* background-color: #9f5cbe; */
@@ -656,50 +665,120 @@ p{
   align-items: center;
   justify-content: center;
   text-align: left;
-  background-color: #4fa5df;
+  /* background-color: #4fa5df; */
 }
 .body21toptxt{
   color: var(--h1color);
   margin-bottom: 8vh;
-  background-color: #221e1e;
+  /* background-color: #221e1e; */
   height: 20%;
   width: 100%;
 }
 .body21mid{
-  height: 200px;
+  height: auto;
   width: 100%;
-  background-color: #191425;
+  /* background-color: #6140ad; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   text-align: left;
 }
+
+.body21midalt{
+  margin-top: 2rem;
+  height: auto;
+  width: 100%;
+  /* background-color: #14251b; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
 .body21mid1{
-  height: 100%;
-  width: 30%;
-  background-color: #af98e4;
+  height: 350px;
+  width: 300px;
+  border: solid 1px var(--paraseccolor);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: left;
 }
-.body21mid1 h2{
-  background-color: #a55c5c;
-  height: auto;
-  padding-bottom: 15px;
+.body21top{
+  /* background-color: #ad5c5c; */
+  height: 70px;
   width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
-.body21mid1 p{
-  background-color: #27363a;
-  color: var(--paramaincolor);
-  line-height: auto;
-  height: auto;
-  padding-bottom: 8px;
-  width: 100%;
-  letter-spacing: -0.188px;
+.body21topl{
+  /* background-color: #91ad5c; */
+  height: 100%;
+  width: 76%;
+  max-width: auto;
 }
+.body21topr{
+  background: linear-gradient(to left, #f4f4ec 0%, #a7a79d 100%);
+  height: 100px;
+  width: 110px;
+  border-radius: 100%;
+  position: relative;
+  top: -30px;
+  right: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+  padding-top: 15px;
+  text-align: center;
+}
+.body21topr h2{
+  letter-spacing: 1.75px;
+  color: var(--primarybgclr);
+  position: relative;
+  top: 5px;
+  right: 5px;
+}
+.body21midmid{
+  /* background-color: #9867e7; */
+  height: 40%;
+  margin-top: 10px;
+  /* margin-bottom: 5px; */
+  width: 80%;
+}
+.body21midmid img{
+  margin-bottom: 5px;
+  height: 60px;
+  /* background-color: #5d73f1; */
+}
+.body21midmid h1{
+  color: var(--h1color);
+  padding-top: 10px;
+  font-size: 1.5rem;
+  line-height: normal;
+}
+.body21midbottom{
+  /* background-color: #3d72c0; */
+  height: 30%;
+  width: 80%;
+}
+.body21midbottom p{
+  color: var(--paraseccolor);
+  line-height: normal;
+  /* letter-spacing: 0.2px; */
+}
+
+
+
+
+
+
+
 
 .body21mid2{
   height: 100%;
