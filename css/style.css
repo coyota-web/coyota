@@ -142,7 +142,10 @@
   text-align: center;
   /* background-color: #fff; */
 }
-li{
+.navlinks ul{
+  
+}
+.navlinks ul{
   transition: all 0.2s ease-out;
 }
 li:hover{
@@ -1181,13 +1184,147 @@ h2{
   margin-top: 5rem;
   height: 33rem;
   width: 100%;
-  background-color: #191425;
+  /* background-color: #191425; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   text-align: left;
 }
+.defplan{
+  height: 100%;
+  width: 32%;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 2px 15px rgba(255, 255, 255, 0.1);
+  border: #8a8f9875 solid 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#card {
+  height: 100%;
+  width: 32%;
+  border-radius: 20px;
+  border: transparent solid 2px;
+  background-image: 
+  linear-gradient(black, black), 
+  linear-gradient(calc(var(--rotation)), #888 0, #444 20%, transparent 80%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  position: relative;
+}
+
+/* Card Design Inside  */
+.cardf{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  border-radius: inherit;
+  /* background-color: #22B14C; */
+}
+.card80{
+  height: 88%;
+  width: 80%;
+  /* background-color: #880015; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--paramaincolor);
+}
+.cardtop{
+  height: 30%;
+  width: 100%;
+  /* background-color: #FF7F27; */
+  display: flex;
+  flex-direction: column;
+}
+.cardtop1{
+  height: 25%;
+  width: 100%;
+  /* background-color: #A349A4; */
+  display: flex;
+  /* align-content: center; */
+  align-items: flex-start;
+}
+.cardtop1 p{
+  /* background-color: #375e55; */
+  height: auto;
+}
+.cardtop2{
+  height: 40%;
+  width: 100%;
+  /* background-color: #C8BFE7; */
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.cardtop3{
+  height: 35%;
+  width: 100%;
+  /* background-color: #99D9EA; */
+}
+.cardmid{
+  height: 58%;
+  width: 90%;
+  padding-top: 18px;
+  /* background-color: #002fff; */
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+}
+.licard{
+  font-family: 'PP Neue Montreal Book';
+
+}
+.cardbtm{
+  height: 12%;
+  width: 100%;
+  /* background-color: #FF7F27; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.quotebtn{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.quote{
+  height: 80%;
+  width: 100%;
+  float: right;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--btnmainb4hvr);
+  color: var(--btnmaintxtcolor);
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  font-size: 1.15rem;
+  border-radius: 0.8rem;
+}
+.quote button{
+  cursor: pointer;
+  font-weight: 450;
+}
+.quote:hover{
+  background-color: var(--btnmainaftrhvr);
+}
+
+
+
 /* _________________________________________________ */
 @media screen and (max-width: 896px) {
   .navlinks{
