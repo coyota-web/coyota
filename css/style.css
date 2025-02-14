@@ -781,6 +781,7 @@ li:hover{
 .body21midbottom p{
   color: var(--paraseccolor);
   line-height: normal;
+  font-family: 'PP Neue Montreal Medium';
   /* letter-spacing: 0.2px; */
 }
 .lessmarginbody21mid{
@@ -1380,7 +1381,7 @@ h2{
   text-align: center;
 }
 .leadformtop{
-  height: 33%;
+  height: 28%;
   width: 50%;
   /* background-color: #9185ff; */
   /* border-radius: 20px; */
@@ -1510,6 +1511,7 @@ input{
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  font-size: 1.1rem;
 }
 
 /* _________________________________________________ */
